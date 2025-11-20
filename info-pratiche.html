@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informazioni pratiche per visitare Dubai - Clima, valuta, trasporti e orari">
+    <title>Informazioni Pratiche - Dubai</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-building" style="color: var(--colore-oro);"></i> DUBAI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="storia.html">Storia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="attrazioni.html">Attrazioni</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="info-pratiche.html">Info Pratiche</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contatti.html">Contatti</a></li>
+                    <li class="nav-item ms-2"><button id="theme-toggle" class="btn btn-sm btn-outline-light"><i class="fas fa-moon"></i></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section-sm" style="background-image: url('https://images.unsplash.com/photo-1512453657686-d8b3a7d7aead?w=1200&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Informazioni Pratiche</h1>
+            <p>Tutto ciò che devi sapere prima di visitare Dubai</p>
+        </div>
+    </section>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+        <section class="section-info-pratiche py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Guida Completa del Viaggiatore</h2>
+                
+                <!-- Nav Tabs -->
+                <ul class="nav nav-tabs nav-fill mb-4" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab-clima" data-bs-toggle="tab" data-bs-target="#clima" type="button" role="tab">
+                            <i class="fas fa-cloud-sun"></i> Clima
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-valuta" data-bs-toggle="tab" data-bs-target="#valuta" type="button" role="tab">
+                            <i class="fas fa-money-bill"></i> Valuta
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-trasporti" data-bs-toggle="tab" data-bs-target="#trasporti" type="button" role="tab">
+                            <i class="fas fa-train"></i> Trasporti
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-info" data-bs-toggle="tab" data-bs-target="#info-utili" type="button" role="tab">
+                            <i class="fas fa-info-circle"></i> Info Utili
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-consigli" data-bs-toggle="tab" data-bs-target="#consigli" type="button" role="tab">
+                            <i class="fas fa-lightbulb"></i> Consigli
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content">
+                    <!-- TAB 1: CLIMA -->
+                    <div class="tab-pane fade show active" id="clima" role="tabpanel">
+                        <h4 class="mb-4"><i class="fas fa-cloud-sun"></i> Clima e Meteo</h4>
+                        <p class="lead mb-4">Dubai ha un clima deserto tropicale con estate molto calda e inverno mite.</p>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Stagione</th>
+                                        <th>Mesi</th>
+                                        <th>Temperatura Media</th>
+                                        <th>Precipitazioni</th>
+                                        <th>Consigli</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="badge bg-danger">Estate</span></td>
+                                        <td>Giugno - Agosto</td>
+                                        <td>40-45°C</td>
+                                        <td>Minime</td>
+                                        <td>Evitare se possibile, molto caldo</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge bg-warning">Autunno</span></td>
+                                        <td>Settembre - Novembre</td>
+                                        <td>25-35°C</td>
+                                        <td>Scarse</td>
+                                        <td>Pericolо ancora caldo a settembre</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge bg-info">Inverno</span></td>
+                                        <td>Dicembre - Febbraio</td>
+                                        <td>15-25°C</td>
+                                        <td>Scarse</td>
+                                        <td>Periodo migliore! Perfetto</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge bg-success">Primavera</span></td>
+                                        <td>Marzo - Maggio</td>
+                                        <td>25-35°C</td>
+                                        <td>Scarse</td>
+                                        <td>Buono, ma aumenta il caldo</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="alert alert-info mt-4">
+                            <strong><i class="fas fa-exclamation-triangle"></i> Consiglio:</strong> Il miglior periodo per visitare Dubai è da novembre a marzo quando il clima è mite e piacevole.
+                        </div>
+                    </div>
+
+                    <!-- TAB 2: VALUTA -->
+                    <div class="tab-pane fade" id="valuta" role="tabpanel">
+                        <h4 class="mb-4"><i class="fas fa-money-bill"></i> Valuta e Costi</h4>
+                        <p class="lead mb-4">La valuta ufficiale è il Dirham Emiratino (AED).</p>
+                        
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="card card-info">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-exchange-alt"></i> Cambio</h5>
+                                        <p class="card-text">
+                                            <strong>1 EUR ≈ 3.67 AED</strong><br>
+                                            <small class="text-muted">(Tasso approssimativo, consultare per cambio attuale)</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card card-info">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-credit-card"></i> Pagamenti</h5>
+                                        <p class="card-text">
+                                            Carte di credito accettate ovunque.<br>
+                                            Bancomat facilmente disponibili in tutta la città.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h6 class="mt-4 mb-3">Costi Medi (in AED):</h6>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr><th>Voce</th><th>Costo Medio</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Hotel 4 stelle (per notte)</td><td>400-600 AED</td></tr>
+                                    <tr><td>Cena ristorante medio</td><td>100-200 AED</td></tr>
+                                    <tr><td>Fast food</td><td>30-50 AED</td></tr>
+                                    <tr><td>Taxi (da aeroporto centro)</td><td>100-150 AED</td></tr>
+                                    <tr><td>Metro (biglietto singolo)</td><td>2-8 AED</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3: TRASPORTI -->
+                    <div class="tab-pane fade" id="trasporti" role="tabpanel">
+                        <h4 class="mb-4"><i class="fas fa-train"></i> Sistema di Trasporti</h4>
+                        <p class="lead mb-4">Dubai ha una rete moderna e efficiente di trasporti pubblici.</p>
+                        
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card card-info">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-metro"></i> Metro di Dubai</h5>
+                                        <p class="card-text">
+                                            <strong>Linea Rossa:</strong> Da nord a sud (Rashidiya - Jebel Ali)<br>
+                                            <strong>Linea Verde:</strong> Centro storico (Creek Harbour - Etisalat)<br>
+                                            <strong>Orari:</strong> 5:30 - 23:30 (giovedì 1:00)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card card-info">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-taxi"></i> Taxi e Uber</h5>
+                                        <p class="card-text">
+                                            Taxi bianchi ufficiali ovunque.<br>
+                                            Uber disponibile in tutta la città.<br>
+                                            Conveniente e affidabile.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card card-info">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-car"></i> Auto a Noleggio</h5>
+                                        <p class="card-text">
+                                            Agenzie in aeroporto e città.<br>
+                                            Patente internazionale richiesta.<br>
+                                            Buone strade e parcheggio facile.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card card-info">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-bus"></i> Autobus</h5>
+                                        <p class="card-text">
+                                            Rete di autobus capillare.<br>
+                                            Economico e puntuale.<br>
+                                            Copre tutta la città.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 4: INFO UTILI -->
+                    <div class="tab-pane fade" id="info-utili" role="tabpanel">
+                        <h4 class="mb-4"><i class="fas fa-info-circle"></i> Informazioni Utili</h4>
+                        
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <h6 class="mb-3"><i class="fas fa-clock"></i> Fuso Orario</h6>
+                                <p><strong>GMT +4 (UAE Time)</strong><br>
+                                <small>4 ore avanti rispetto all'ora italiana in inverno, 3 ore in estate</small></p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="mb-3"><i class="fas fa-passport"></i> Visto</h6>
+                                <p><strong>Per cittadini italiani:</strong><br>
+                                <small>Visto gratuito di 30 giorni al passaporto all'arrivo</small></p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="mb-3"><i class="fas fa-file"></i> Documenti</h6>
+                                <p><strong>Necessari:</strong><br>
+                                <small>Passaporto valido per almeno 6 mesi</small></p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="mb-3"><i class="fas fa-phone"></i> Contatti Emergenza</h6>
+                                <p><strong>Emergenza generale:</strong> 999<br>
+                                <strong>Polizia:</strong> 901</p>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning mt-4">
+                            <strong><i class="fas fa-warning"></i> Importante:</strong> Dubai è un paese musulmano. 
+                            Rispettare le usanze locali: abbigliamento modesto, comportamento discreto, non fotografare senza permesso.
+                        </div>
+                    </div>
+
+                    <!-- TAB 5: CONSIGLI DI VIAGGIO -->
+                    <div class="tab-pane fade" id="consigli" role="tabpanel">
+                        <h4 class="mb-4"><i class="fas fa-lightbulb"></i> Consigli di Viaggio</h4>
+                        
+                        <h6 class="mt-4 mb-3"><i class="fas fa-check-circle text-success"></i> Cose da Fare</h6>
+                        <ul class="list-group mb-4">
+                            <li class="list-group-item">✓ Visitare il Burj Khalifa al tramonto</li>
+                            <li class="list-group-item">✓ Fare shopping a Dubai Mall e Gold Souk</li>
+                            <li class="list-group-item">✓ Fare un desert safari</li>
+                            <li class="list-group-item">✓ Visitare la vecchia città (Al Bastakiya)</li>
+                            <li class="list-group-item">✓ Rilassarsi sulle spiagge private</li>
+                            <li class="list-group-item">✓ Provare il cibo locale negli ristoranti locali</li>
+                        </ul>
+
+                        <h6 class="mt-4 mb-3"><i class="fas fa-times-circle text-danger"></i> Cose da Evitare</h6>
+                        <ul class="list-group mb-4">
+                            <li class="list-group-item">✗ Non fotografare persone senza permesso</li>
+                            <li class="list-group-item">✗ Non mangiare o bere in pubblico durante il Ramadan di giorno</li>
+                            <li class="list-group-item">✗ Non indossare abbigliamento troppo succinto</li>
+                            <li class="list-group-item">✗ Non guidare in state di alterazione</li>
+                            <li class="list-group-item">✗ Non criticare il governo o la religione</li>
+                            <li class="list-group-item">✗ Non accettare doni da estranei</li>
+                        </ul>
+
+                        <h6 class="mt-4 mb-3"><i class="fas fa-utensils"></i> Cibo Locale</h6>
+                        <p><strong>Piatti tradizionali da provare:</strong></p>
+                        <ul>
+                            <li><strong>Hummus:</strong> Purea di ceci con tahina</li>
+                            <li><strong>Shawarma:</strong> Carne grigliata in pita</li>
+                            <li><strong>Tabbouleh:</strong> Insalata di prezzemolo e grano</li>
+                            <li><strong>Falafel:</strong> Frittelle di ceci fritte</li>
+                            <li><strong>Biryani:</strong> Riso speziato con carne</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title"><i class="fas fa-building" style="color: var(--colore-oro);"></i> DUBAI</h5>
+                    <p class="text-muted small">La città del futuro dove tradizione e innovazione si incontrano.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="footer-title">Link Veloci</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="storia.html">Storia</a></li>
+                        <li><a href="attrazioni.html">Attrazioni</a></li>
+                        <li><a href="info-pratiche.html">Info Pratiche</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="footer-title">Seguici</h6>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="opacity: 0.2;">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="text-muted small mb-0">&copy; 2024 DUBAI WebSite. Progetto scolastico ITIS Informatico. Tutti i diritti riservati.</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="text-muted small mb-0">Made with <i class="fas fa-heart" style="color: var(--colore-accent);"></i> by Gabriele & Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

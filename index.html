@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DUBAI - La città del futuro. Scopri attrazioni, storia e informazioni pratiche.">
+    <meta name="keywords" content="Dubai, UAE, Turismo, Burj Khalifa, Palm Jumeirah">
+    <title>DUBAI - La Città del Futuro</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-building" style="color: var(--colore-oro);"></i> DUBAI
+            </a>
+            
+            <!-- Hamburger Menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="storia.html">Storia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="attrazioni.html">Attrazioni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info-pratiche.html">Info Pratiche</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contatti.html">Contatti</a>
+                    </li>
+                    <!-- Dark Mode Toggle (MEMBRO 3 - opzionale) -->
+                    <li class="nav-item ms-2">
+                        <button id="theme-toggle" class="btn btn-sm btn-outline-light">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1512453657686-d8b3a7d7aead?w=1200&q=80'); background-size: cover; background-position: center;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">DUBAI</h1>
+            <p class="hero-subtitle">La Città del Futuro</p>
+            <p class="hero-description">Dove il deserto incontra il lusso e l'innovazione</p>
+            <a href="#attrazioni" class="btn btn-oro btn-lg mt-4">
+                <i class="fas fa-arrow-down"></i> Scopri di Più
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- Sezione Welcome / About -->
+        <section class="section-welcome py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Benvenuti a Dubai</h2>
+                <p class="lead text-center text-muted mb-5">
+                    Dubai è una città che rappresenta il perfetto equilibrio tra tradizione e modernità, 
+                    con infrastrutture all'avanguardia e un'accoglienza calorosa verso i visitatori di tutto il mondo.
+                </p>
+                
+                <!-- Cards Info -->
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card card-info">
+                            <div class="card-body text-center">
+                                <i class="fas fa-users icon-card"></i>
+                                <h5 class="card-title mt-3">Popolazione</h5>
+                                <p class="card-text text-oro fw-bold fs-5">3.6 Milioni</p>
+                                <p class="card-text small text-muted">Abitanti da tutto il mondo</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card card-info">
+                            <div class="card-body text-center">
+                                <i class="fas fa-history icon-card"></i>
+                                <h5 class="card-title mt-3">Fondazione</h5>
+                                <p class="card-text text-oro fw-bold fs-5">1833</p>
+                                <p class="card-text small text-muted">Insediamento storico</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card card-info">
+                            <div class="card-body text-center">
+                                <i class="fas fa-sun icon-card"></i>
+                                <h5 class="card-title mt-3">Clima</h5>
+                                <p class="card-text text-oro fw-bold fs-5">Deserto Tropicale</p>
+                                <p class="card-text small text-muted">Caldo e soleggiato tutto l'anno</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Highlights / Quick Facts -->
+        <section class="section-highlights py-5" style="background-color: var(--colore-sfondo-light);">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Perché Dubai?</h2>
+                
+                <div class="row g-4" id="attrazioni">
+                    <!-- Card 1: Burj Khalifa -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-highlight">
+                            <div class="card-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h5 class="card-title">Burj Khalifa</h5>
+                            <p class="card-text">L'edificio più alto del mondo a 828 metri</p>
+                            <p class="stat">163 piani</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2: Palm Jumeirah -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-highlight">
+                            <div class="card-icon">
+                                <i class="fas fa-island"></i>
+                            </div>
+                            <h5 class="card-title">Palm Jumeirah</h5>
+                            <p class="card-text">Isola artificiale simbolo di ingegneria</p>
+                            <p class="stat">560 km di costa</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3: Shopping -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-highlight">
+                            <div class="card-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <h5 class="card-title">Shopping</h5>
+                            <p class="card-text">Dubai Mall - il centro commerciale più grande</p>
+                            <p class="stat">2 milioni di visitatori/anno</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 4: Cultura -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-highlight">
+                            <div class="card-icon">
+                                <i class="fas fa-mosque"></i>
+                            </div>
+                            <h5 class="card-title">Cultura</h5>
+                            <p class="card-text">Tradizione emirata e modernità convivono</p>
+                            <p class="stat">Patrimonio unico</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Call to Action -->
+        <section class="section-cta py-5 text-center" style="background: linear-gradient(135deg, var(--colore-oro), var(--colore-accent));">
+            <div class="container">
+                <h2 class="text-white mb-3">Pronto a scoprire Dubai?</h2>
+                <p class="text-white-50 mb-4">Esplora le attrazioni principali, la storia affascinante e le informazioni pratiche</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="storia.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-book"></i> Scopri la Storia
+                    </a>
+                    <a href="attrazioni.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-map-pin"></i> Attrazioni
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Colonna 1: Brand -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title">
+                        <i class="fas fa-building" style="color: var(--colore-oro);"></i> DUBAI
+                    </h5>
+                    <p class="text-muted small">
+                        La città del futuro dove tradizione e innovazione si incontrano.
+                    </p>
+                </div>
+                
+                <!-- Colonna 2: Link Veloci -->
+                <div class="col-md-4">
+                    <h6 class="footer-title">Link Veloci</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="storia.html">Storia</a></li>
+                        <li><a href="attrazioni.html">Attrazioni</a></li>
+                        <li><a href="info-pratiche.html">Info Pratiche</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonna 3: Social Media -->
+                <div class="col-md-4">
+                    <h6 class="footer-title">Seguici</h6>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright Line -->
+            <hr class="my-4" style="opacity: 0.2;">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="text-muted small mb-0">
+                        &copy; 2024 DUBAI WebSite. Progetto scolastico ITIS Informatico. Tutti i diritti riservati.
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="text-muted small mb-0">
+                        Made with <i class="fas fa-heart" style="color: var(--colore-accent);"></i> by Gabriele & Team
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

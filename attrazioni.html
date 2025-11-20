@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scopri le principali attrazioni di Dubai - Burj Khalifa, Palm Jumeirah, Dubai Mall e molto altro">
+    <title>Attrazioni Principali di Dubai</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-building" style="color: var(--colore-oro);"></i> DUBAI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="storia.html">Storia</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="attrazioni.html">Attrazioni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="info-pratiche.html">Info Pratiche</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contatti.html">Contatti</a></li>
+                    <li class="nav-item ms-2"><button id="theme-toggle" class="btn btn-sm btn-outline-light"><i class="fas fa-moon"></i></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section-sm" style="background-image: url('https://images.unsplash.com/photo-1512453657686-d8b3a7d7aead?w=1200&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Attrazioni Principali</h1>
+            <p>Scopri i luoghi più affascinanti di Dubai</p>
+        </div>
+    </section>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+        <section class="section-attractions py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Top 8 Attrazioni</h2>
+                
+                <div class="row g-4">
+                    <!-- BURJ KHALIFA -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-attraction" data-attraction="burj-khalifa">
+                            <div class="card-image-container">
+                                <img src="https://images.unsplash.com/photo-1512453657686-d8b3a7d7aead?w=400&q=80" 
+                                     alt="Burj Khalifa - l'edificio più alto del mondo" class="card-img-top">
+                                <div class="card-overlay">
+                                    <button class="btn btn-oro btn-sm view-more" data-bs-toggle="modal" data-bs-target="#modalAttrazione">
+                                        <i class="fas fa-eye"></i> Scopri di Più
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Burj Khalifa</h5>
+                                <p class="card-text small text-muted">L'edificio più alto del mondo</p>
+                                <div class="info-attraction">
+                                    <span class="badge bg-oro"><i class="fas fa-ruler-vertical"></i> 828m</span>
+                                    <span class="badge bg-accent"><i class="fas fa-building"></i> 163 piani</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PALM JUMEIRAH -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-attraction" data-attraction="palm-jumeirah">
+                            <div class="card-image-container">
+                                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80" 
+                                     alt="Palm Jumeirah - isola artificiale" class="card-img-top">
+                                <div class="card-overlay">
+                                    <button class="btn btn-oro btn-sm view-more" data-bs-toggle="modal" data-bs-target="#modalAttrazione">
+                                        <i class="fas fa-eye"></i> Scopri di Più
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Palm Jumeirah</h5>
+                                <p class="card-text small text-muted">Isola artificiale simbolo di ingegneria</p>
+                                <div class="info-attraction">
+                                    <span class="badge bg-oro"><i class="fas fa-water"></i> Artificiale</span>
+                                    <span class="badge bg-accent"><i class="fas fa-ruler"></i> 560 km costa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DUBAI MALL -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-attraction" data-attraction="dubai-mall">
+                            <div class="card-image-container">
+                                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&q=80" 
+                                     alt="Dubai Mall - il più grande centro commerciale" class="card-img-top">
+                                <div class="card-overlay">
+                                    <button class="btn btn-oro btn-sm view-more" data-bs-toggle="modal" data-bs-target="#modalAttrazione">
+                                        <i class="fas fa-eye"></i> Scopri di Più
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Dubai Mall</h5>
+                                <p class="card-text small text-muted">Il centro commerciale più grande</p>
+                                <div class="info-attraction">
+                                    <span class="badge bg-oro"><i class="fas fa-shopping-bag"></i> Shopping</span>
+                                    <span class="badge bg-accent"><i class="fas fa-users"></i> 2M visitatori/anno</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BURJ AL ARAB -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-attraction" data-attraction="burj-al-arab">
+                            <div class="card-image-container">
+                                <img src="https://images.unsplash.com/photo-1538623369603-baf4bf649b61?w=400&q=80" 
+                                     alt="Burj Al Arab - hotel lussuoso" class="card-img-top">
+                                <div class="card-overlay">
+                                    <button class="btn btn-oro btn-sm view-more" data-bs-toggle="modal" data-bs-target="#modalAttrazione">
+                                        <i class="fas fa-eye"></i> Scopri di Più
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Burj Al Arab</h5>
+                                <p class="card-text small text-muted">Hotel di lusso 7 stelle</p>
+                                <div class="info-attraction">
+                                    <span class="badge bg-oro"><i class="fas fa-crown"></i> Lusso</span>
+                                    <span class="badge bg-accent"><i class="fas fa-star"></i> 7 stelle</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DUBAI FOUNTAIN -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-attraction" data-attraction="dubai-fountain">
+                            <div class="card-image-container">
+                                <img src="https://images.unsplash.com/photo-1540375089400-455b8bb2a5a0?w=400&q=80" 
+                                     alt="Dubai Fountain - fontana coreografica" class="card-img-top">
+                                <div class="card-overlay">
+                                    <button class="btn btn-oro btn-sm view-more" data-bs-toggle="modal" data-bs-target="#modalAttrazione">
+                                        <i class="fas fa-eye"></i> Scopri di Più
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Dubai Fountain</h5>
+                                <p class="card-text small text-muted">Fontana coreografica spettacolare</p>
+                                <div class="info-attraction">
+                                    <span class="badge bg-oro"><i class="fas fa-water"></i> Spettacolo</span>
+                                    <span class="badge bg-accent"><i class="fas fa-music"></i> Musica</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DESERT SAFARI -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-attraction" data-attraction="desert-safari">
+                            <div class="card-image-container">
+                                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80" 
+                                     alt="Desert Safari - avventura nel deserto" class="card-img-top">
+                                <div class="card-overlay">
+                                    <button class="btn btn-oro btn-sm view-more" data-bs-toggle="modal" data-bs-target="#modalAttrazione">
+                                        <i class="fas fa-eye"></i> Scopri di Più
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Desert Safari</h5>
+                                <p class="card-text small text-muted">Avventura nel deserto</p>
+                                <div class="info-attraction">
+                                    <span class="badge bg-oro"><i class="fas fa-dune"></i> Deserto</span>
+                                    <span class="badge bg-accent"><i class="fas fa-user-secret"></i> Avventura</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GOLD SOUK -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-attraction" data-attraction="gold-souk">
+                            <div class="card-image-container">
+                                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80" 
+                                     alt="Gold Souk - mercato dell'oro" class="card-img-top">
+                                <div class="card-overlay">
+                                    <button class="btn btn-oro btn-sm view-more" data-bs-toggle="modal" data-bs-target="#modalAttrazione">
+                                        <i class="fas fa-eye"></i> Scopri di Più
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Gold Souk</h5>
+                                <p class="card-text small text-muted">Mercato dell'oro più grande del mondo</p>
+                                <div class="info-attraction">
+                                    <span class="badge bg-oro"><i class="fas fa-ring"></i> Oro</span>
+                                    <span class="badge bg-accent"><i class="fas fa-shopping-cart"></i> Mercato</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EMIRATES MALL -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-attraction" data-attraction="emirates-mall">
+                            <div class="card-image-container">
+                                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&q=80" 
+                                     alt="Emirates Mall - centro commerciale esclusivo" class="card-img-top">
+                                <div class="card-overlay">
+                                    <button class="btn btn-oro btn-sm view-more" data-bs-toggle="modal" data-bs-target="#modalAttrazione">
+                                        <i class="fas fa-eye"></i> Scopri di Più
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Emirates Mall</h5>
+                                <p class="card-text small text-muted">Centro commerciale esclusivo</p>
+                                <div class="info-attraction">
+                                    <span class="badge bg-oro"><i class="fas fa-shopping-bags"></i> Esclusivo</span>
+                                    <span class="badge bg-accent"><i class="fas fa-crown"></i> Premium</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Dettagli Attrazione -->
+        <div class="modal fade" id="modalAttrazione" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Titolo Attrazione</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modalDescription">Descrizione dell'attrazione...</p>
+                        <p id="modalInfo" class="text-muted"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                        <a href="contatti.html" class="btn btn-oro">Contattaci per info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title"><i class="fas fa-building" style="color: var(--colore-oro);"></i> DUBAI</h5>
+                    <p class="text-muted small">La città del futuro dove tradizione e innovazione si incontrano.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="footer-title">Link Veloci</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="storia.html">Storia</a></li>
+                        <li><a href="attrazioni.html">Attrazioni</a></li>
+                        <li><a href="info-pratiche.html">Info Pratiche</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="footer-title">Seguici</h6>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="opacity: 0.2;">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="text-muted small mb-0">&copy; 2024 DUBAI WebSite. Progetto scolastico ITIS Informatico. Tutti i diritti riservati.</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="text-muted small mb-0">Made with <i class="fas fa-heart" style="color: var(--colore-accent);"></i> by Gabriele & Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+    
+    <!-- Script per gestire i click su attrazioni -->
+    <script>
+        const attrazioniData = {
+            'burj-khalifa': {
+                title: 'Burj Khalifa',
+                description: 'Il Burj Khalifa è l\'edificio più alto del mondo con un\'altezza di 828 metri. Completato nel 2010, offre panorami straordinari da oltre 160 piani.',
+                info: '📍 Downtown Dubai | ⏰ 9:00 - 22:00 | 🎫 Consultare tariffe'
+            },
+            'palm-jumeirah': {
+                title: 'Palm Jumeirah',
+                description: 'Un\'isola artificiale a forma di palma è un capolavoro di ingegneria moderna. È il simbolo del lusso dubaiota con spiagge esclusive e resort lussuosi.',
+                info: '📍 Jumeirah | 🌊 Spiaggia privata | 🏨 Villaggi di lusso'
+            },
+            'dubai-mall': {
+                title: 'Dubai Mall',
+                description: 'Il centro commerciale più grande del mondo con oltre 1200 negozi. Ospita l\'aquario più grande del mondo e il cinema IMAX.',
+                info: '📍 Downtown Dubai | 🛍️ 1200+ negozi | 🎬 IMAX e aquario'
+            },
+            'burj-al-arab': {
+                title: 'Burj Al Arab',
+                description: 'L\'hotel 7 stelle più iconico del mondo a forma di vela. Offre il massimo del lusso con una delle migliori viste sulla città.',
+                info: '📍 Jumeirah | ⭐⭐⭐⭐⭐⭐⭐ | 💎 Ultra-lusso'
+            },
+            'dubai-fountain': {
+                title: 'Dubai Fountain',
+                description: 'La più grande fontana coreografica del mondo con spettacoli affascinanti. Le fontane si muovono a ritmo della musica con effetti illuminati.',
+                info: '📍 Downtown Dubai | 🎵 Spettacoli ogni 30 min | 🎆 Gratuito'
+            },
+            'desert-safari': {
+                title: 'Desert Safari',
+                description: 'Un\'avventura nel deserto con jeep, cammelli e dune dorate. Include cena tradizionale e spettacoli folcloristici al tramonto.',
+                info: '📍 Deserto di Dubai | 🚙 Jeep safari | 🐪 Cammelli'
+            },
+            'gold-souk': {
+                title: 'Gold Souk',
+                description: 'Il mercato dell\'oro più grande del mondo con centinaia di bancarelle. Un\'esperienza affascinante di shopping tradizionale.',
+                info: '📍 Deira | 🪙 Oro e gioielli | 🛒 Commercio tradizionale'
+            },
+            'emirates-mall': {
+                title: 'Emirates Mall',
+                description: 'Un centro commerciale esclusivo con i brand più prestigiosi al mondo. Offre una vista diretta sul Burj Khalifa da alcune aree interne.',
+                info: '📍 Emirates Hills | 👜 Brand luxury | 🏆 Esclusivo'
+            }
+        };
+
+        document.querySelectorAll('.view-more').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const cardId = this.closest('.card-attraction').getAttribute('data-attraction');
+                const data = attrazioniData[cardId];
+                
+                document.getElementById('modalTitle').textContent = data.title;
+                document.getElementById('modalDescription').textContent = data.description;
+                document.getElementById('modalInfo').innerHTML = `<strong>${data.info}</strong>`;
+            });
+        });
+    </script>
+</body>
+</html>

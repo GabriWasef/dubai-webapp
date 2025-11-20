@@ -1,0 +1,96 @@
+# .gitignore - File da ignorare in Git
+
+# =========================
+# IDE & Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# =========================
+# Dependencies
+# =========================
+node_modules/
+package-lock.json
+yarn.lock
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.local
+.env.*.local
+
+# =========================
+# Build Output
+# =========================
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Testing
+# =========================
+coverage/
+.nyc_output/
+*.lcov
+
+# =========================
+# OS-specific
+# =========================
+.AppleDouble
+.AppleDB
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# =========================
+# Local Development
+# =========================
+.local/
+temp/
+tmp/
+cache/
+
+# =========================
+# Compressed Files
+# =========================
+*.zip
+*.rar
+*.7z
+
+# =========================
+# Database
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Backup Files
+# =========================
+*.bak
+*.backup
+*~
+
+# =========================
+# Configuration (se contengono secrets)
+# =========================
+# config.js (se contiene API keys)
+# database.config.js
