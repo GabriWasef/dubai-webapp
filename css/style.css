@@ -662,6 +662,34 @@ section {
   background-color: var(--colore-sfondo-light);
 }
 
+/* Specific styling for the targeted list-group: `ul.list-group.mb-4` */
+/* Gives a subtle background and ensures hover becomes white with black text
+   in both light and dark themes. Uses a more specific selector to override
+   the generic .list-group-item rules. */
+ul.list-group.mb-4 .list-group-item {
+  background-color: rgba(201,169,97,0.06);
+  color: var(--colore-nero);
+  border-color: rgba(201,169,97,0.15);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+ul.list-group.mb-4 .list-group-item:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Dark theme: keep initial items subtle and ensure hover is white + black text */
+[data-theme="dark"] ul.list-group.mb-4 .list-group-item {
+  background-color: rgba(255,255,255,0.03);
+  color: var(--colore-testo);
+  border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] ul.list-group.mb-4 .list-group-item:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
 /* ===== CUSTOM SCROLLBAR ===== */
 ::-webkit-scrollbar {
   width: 10px;
