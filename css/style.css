@@ -218,7 +218,7 @@ body {
   font-family: var(--font-titoli);
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--colore-nero);
+  color: var(--colore-testo-light);
   position: relative;
   display: inline-block;
   width: 100%;
@@ -312,12 +312,9 @@ section {
 .card-title {
   font-family: var(--font-titoli);
   font-weight: 600;
-  color: var(--colore-nero);
-}
-
-.card-text {
   color: var(--colore-testo-light);
 }
+
 
 /* ===== ICONE ===== */
 .icon-card {
@@ -408,7 +405,7 @@ section {
 .timeline-content h4 {
   font-family: var(--font-titoli);
   font-weight: 600;
-  color: var(--colore-nero);
+  color: var(--colore-oro-hover);
   margin-bottom: var(--spazio-sm);
 }
 
