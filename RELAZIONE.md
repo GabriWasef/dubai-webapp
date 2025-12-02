@@ -108,10 +108,7 @@ Practical Info (info-pratiche.html)
 │   ├── Info Utili
 │   └── Consigli
 
-Contact (contatti.html)
-├── Form validato
-├── Mappa
-└── Info contatti
+<!-- Sezione Contact (contatti.html) rimossa -->
 ```
 
 ### 4.3 Palette Colori
@@ -168,7 +165,7 @@ dubai-webapp/
 ├── storia.html (MEMBRO 2)
 ├── attrazioni.html (MEMBRO 2)
 ├── info-pratiche.html (MEMBRO 3)
-├── contatti.html (MEMBRO 3)
+<!-- contatti.html rimosso -->
 │
 ├── css/
 │   ├── style.css (Stili principali + variabili CSS)
@@ -178,7 +175,7 @@ dubai-webapp/
 │   ├── main.js (Inizializzazioni)
 │   ├── navbar.js (MEMBRO 1 - Menu & Sticky)
 │   ├── animations.js (MEMBRO 2 - Scroll & Effetti)
-│   └── form-validation.js (MEMBRO 3 - Form)
+<!-- form-validation.js rimosso -->
 │
 ├── assets/
 │   ├── images/ (JPG/PNG ottimizzate)
@@ -218,7 +215,7 @@ style.css
 - **main.js**: Event listeners globali
 - **navbar.js**: DOM manipulation navbar
 - **animations.js**: Intersection Observer
-- **form-validation.js**: Regex e validazione
+<!-- form-validation.js rimosso -->
 
 ---
 
@@ -230,7 +227,7 @@ style.css
 |--------|-----------|----------|------------|--------------|---------|
 | Gabriele | HomePage + Navbar + Footer | Hero, Stats, Highlights, Sticky Nav | 15h | 18h | 8 |
 | Membro 2 | Storia + Attrazioni | Timeline, Gallery, Modal, Animations | 16h | 19h | 7 |
-| Membro 3 | Info + Contatti | Tabs, Form, Validation, Maps | 14h | 16h | 6 |
+| Membro 3 | Info Pratiche | Tabs, Maps | 14h | 16h | 6 |
 | **TOTALE** | | | **45h** | **53h** | **21** |
 
 ### Descrizione Responsabilità
@@ -359,7 +356,7 @@ function initParallaxEffect()
 function animateCounters()
 ```
 
-#### form-validation.js (MEMBRO 3)
+<!-- form-validation.js rimosso -->
 ```javascript
 // Validazione real-time
 function validateField(fieldName, fields, errorMessages)
@@ -511,11 +508,7 @@ Speed Index: 2.3s
 - Tabelle dati (clima, valuta, trasporti)
 - Layout responsive
 
-✅ **contatti.html** - Contatti
-- Form contatti completo
-- Validazione real-time
-- Mappa Google Maps
-- Info contatti
+<!-- Pagina contatti rimossa -->
 
 ### 10.2 Funzionalità Implementate
 

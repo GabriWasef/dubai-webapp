@@ -73,7 +73,7 @@ git checkout -b feature/homepage-navbar-footer
 git checkout -b feature/storia-attrazioni
 
 # MEMBRO 3:
-git checkout -b feature/info-contatti-form
+<!-- Riferimenti al form contatti rimossi -->
 ```
 
 ---
@@ -198,7 +198,7 @@ Il sito ha già il dark mode! Provalo:
 - CSS: `css/style.css` (case-sensitive!)
 
 **❌ "Form non si valida"**
-- Controlla che il form abbia `id="contactForm"`
+<!-- Istruzioni relative al form contatti rimosse -->
 - Verifica tutti gli `id` degli input
 
 **❌ "Navbar non è sticky"**
@@ -234,7 +234,7 @@ Per avere un BUON VOTO, assicurati che ci siano:
 - [ ] Apri su Tablet (DevTools 768px) - Funziona? ✓
 - [ ] Apri su Mobile (DevTools 375px) - Funziona? ✓
 - [ ] Prova Navbar hamburger menu ✓
-- [ ] Prova Form contatti con validazione ✓
+<!-- Checklist form contatti rimossa -->
 - [ ] Prova Dark mode toggle ✓
 - [ ] Prova Smooth scroll (clicca "Scopri di Più") ✓
 - [ ] Console Browser: 0 errori ✓
@@ -265,12 +265,12 @@ Per avere un BUON VOTO, assicurati che ci siano:
    - Storia
    - Attrazioni
    - Info Pratiche
-   - Contatti con Form
+   <!-- Sezione Contatti rimossa -->
 
 4. **Spiegazione Codice**
    - Mostra navbar.js (Gabriele)
    - Mostra animations.js (Membro 2)
-   - Mostra form-validation.js (Membro 3)
+   <!-- form-validation.js rimosso -->
 
 5. **Workflow GitHub**
    - Mostra il tab "Pull requests"
@@ -325,7 +325,7 @@ Sei pronto a partire! Inizia con:
 
 ---
 
-**Contatti:**
+<!-- Sezione Contatti rimossa -->
 - Domande? → Apri una Issue su GitHub
 - Confuso? → Leggi README.md e RELAZIONE.md
 - Bloccato? → Chiedi al docente o al gruppo

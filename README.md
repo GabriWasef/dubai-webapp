@@ -19,7 +19,7 @@ Sito web informativo su **Dubai** realizzato come progetto scolastico per l'**IT
 |--------|-------|-----------------|
 | **Gabriele** | Project Manager | Homepage, Navbar, Footer, Coordinamento |
 | **Membro 2** | Frontend Developer | Storia, Attrazioni, Animazioni |
-| **Membro 3** | Frontend Developer | Info Pratiche, Contatti, Form Validation |
+| **Membro 3** | Frontend Developer | Info Pratiche |
 
 ---
 
@@ -31,7 +31,7 @@ dubai-webapp/
 ├── storia.html               # Pagina storia
 ├── attrazioni.html           # Pagina attrazioni
 ├── info-pratiche.html        # Informazioni pratiche
-├── contatti.html             # Pagina contatti
+<!-- contatti.html rimosso -->
 ├── css/
 │   ├── style.css             # Stili principali
 │   ├── responsive.css        # Media queries
@@ -40,7 +40,7 @@ dubai-webapp/
 │   ├── main.js               # Logica generale
 │   ├── navbar.js             # Menu & sticky navbar
 │   ├── animations.js         # Scroll & effetti
-│   └── form-validation.js    # Validazione form
+<!-- form-validation.js rimosso -->
 ├── assets/
 │   ├── images/               # Immagini Dubai
 │   └── icons/                # Icone SVG
@@ -112,8 +112,7 @@ http-server .
   - Info Utili (visto, documenti, telefoni)
   - Consigli di viaggio (cose da fare/evitare)
 
-### 5. **Contatti** (`contatti.html`)
-- Form contatti con validazione JS
+<!-- Sezione Contatti rimossa -->
 - Mappa Google Maps embedded
 - Info di contatto (indirizzo, tel, email)
 - Validazione real-time dei campi
@@ -180,7 +179,7 @@ http-server .
 - ✓ Card hover effects
 - ✓ Scroll-to-top button
 
-### form-validation.js
+<!-- form-validation.js rimosso -->
 - ✓ Real-time field validation
 - ✓ Email regex validation
 - ✓ Telefono validation (internazionale)
@@ -329,7 +328,7 @@ FormDebug.validateField('email', fields, errorMessages)
 
 ---
 
-## 📞 Contatti & Supporto
+<!-- Sezione Contatti & Supporto rimossa -->
 
 **Domande su questo progetto?**
 - Crea una Issue su GitHub
