@@ -253,7 +253,7 @@ section {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 24px rgba(247, 247, 247, 0.12);
 }
 
 .card-info {
@@ -649,7 +649,7 @@ section {
 
 /* ===== LIST GROUP ===== */
 .list-group-item {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #ffffff;
   background-color: white;
   padding: 15px;
   color: var(--colore-testo);
@@ -664,15 +664,15 @@ section {
    in both light and dark themes. Uses a more specific selector to override
    the generic .list-group-item rules. */
 ul.list-group.mb-4 .list-group-item {
-  background-color: rgba(201,169,97,0.06);
+  background-color: rgba(87, 87, 87, 0.06);
   color: var(--colore-nero);
-  border-color: rgba(201,169,97,0.15);
+  border-color: rgba(78, 78, 78, 0.15);
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 ul.list-group.mb-4 .list-group-item:hover {
-  background-color: #ffffff !important;
-  color: #000000 !important;
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
 }
 
 /* Dark theme: keep initial items subtle and ensure hover is white + black text */
