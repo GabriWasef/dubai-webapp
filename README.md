@@ -18,8 +18,8 @@ Sito web informativo su **Dubai** realizzato come progetto scolastico per l'**IT
 | Membro | Ruolo | Responsabilità |
 |--------|-------|-----------------|
 | **Gabriele** | Project Manager | Homepage, Navbar, Footer, Coordinamento |
-| **Membro 2** | Frontend Developer | Storia, Attrazioni, Animazioni |
-| **Membro 3** | Frontend Developer | Info Pratiche |
+| **Mattheus** | Frontend Developer | Storia, Attrazioni, Animazioni |
+| **Angelo** | Frontend Developer | Info Pratiche |
 
 ---
 
